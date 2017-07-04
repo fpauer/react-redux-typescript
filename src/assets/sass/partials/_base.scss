@@ -1,0 +1,54 @@
+body {
+    #react-root {                           overflow-x: hidden; }
+    .app {                                  height: calc(100vh - 70px); overflow-y: auto; }
+    .logo {                                 text-align: center; padding-top: 20px;
+        img {
+            width: 170px;
+        }
+    }
+    .background-line {                      width: 100%; display: table;
+        span {                              display: block; padding: 0 20px; white-space: nowrap; }
+        &:before, &:after {                 border-top: 1px solid #C0C0C0; content: ''; position: relative; display: table-cell; top: 0.8em; width: 50%;
+        }
+    }
+
+    a {                                     color: $brand-light-blue;
+        &.trigger {                         cursor: pointer; }
+    }
+
+    [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus,
+    input.masked:focus {
+                                            border-color: $brand-blue; box-shadow: 0 0 5px $brand-blue; outline: none;
+    }
+
+    input.masked {                          display: block; box-sizing: border-box; width: 100%; height: 2.4375rem; padding: 0.5rem; border: 1px solid #cacaca;
+                                            margin: 0 0 1rem; font-family: inherit; font-size: 1rem; color: #0a0a0a; background-color: #fefefe; box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+                                            border-radius: 0; transition: box-shadow 0.5s, border-color 0.25s ease-in-out; -webkit-appearance: none;
+    }
+
+    .flexible {                             display: flex;
+        .flexible-child {                   flex: 0 auto;
+            &.full {                        flex: 1; overflow: hidden; margin-right: 10px; text-overflow: ellipsis; }
+            &.ellipsed {                    @include ellipsed; }
+        }
+    }
+
+    .Select--multi {                        margin-bottom: 10px;
+        .Select-control {                   border-radius: 0; }
+        .Select-value {                     color: $brand-blue; }
+    }
+
+    .hidden {                               display: none; }
+    .padded {                               padding: 0 25px; }
+    .text-center {                          text-align: center; }
+    .with-header-image {                    /*padding-top: 30px;*/
+        .header {                           height: 30px; position: absolute; top: 0; left: 0; width: 100vw; z-index: 20; display: none; }
+        .footer {                           height: 50px; width: 100vw; background-repeat: repeat-x; position: relative; background-size: auto 50px; margin-top: 20px; display: none; }
+    }
+    .iframe-reveal {
+        iframe {                            width: 100%; height: 95%; border: 1px solid $brand-light-blue; margin-top: 30px; }
+    }
+    .nowrap {
+        white-space: nowrap;
+    }
+}

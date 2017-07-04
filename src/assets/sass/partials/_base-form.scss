@@ -1,0 +1,20 @@
+.base-form {                                        width: 100%;
+    .title {                                        font-weight: bold; text-align: center; font-size: $subheadline-font-size; margin: 20px 0;
+        &.top {                                     font-size: $headline-font-size; }
+        &.big {                                     font-size: $huge-small-font-size; }
+    }
+    .cancel {                                       position: absolute; right: 15px; top: 25px; font-size: $subheadline-font-size;
+        a {                                         color: $brand-default; }
+    }
+    .description {                                  padding: 0 20px;
+
+    }
+    .proceed {                                      padding: 10px 20px;
+        &.full {                                    padding: 10px 0; }
+        .button {                                   width: 100%; }
+    }
+    .callout {                                      width: 90%; margin: 0 auto; margin-bottom: 10px; }
+    &.with-header-image {
+        .cancel {                                   top: 55px; }
+    }
+}

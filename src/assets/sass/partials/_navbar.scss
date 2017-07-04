@@ -1,0 +1,19 @@
+.navbar {                                           color: $brand-default; position: fixed; width: 100%; bottom: 0; z-index: $navbar-z-index;
+                                                    @include app-background; height: $navbar-height;
+    .left {
+        .menu {
+            li {                                    flex: 1 0 0;
+                a {                                 color: $brand-default;
+                    i {                             font-size: $menu-item-font-size; margin-right: 0; }
+                    span {                          text-align: center; }
+                    &:after {                       display: none; }
+                }
+                .menu {                             top: auto; right: 5px; bottom: 105%;
+                    a {
+                        span {                      text-align: center; }
+                    }
+                }
+            }
+        }
+    }
+}

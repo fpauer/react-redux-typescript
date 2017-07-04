@@ -1,0 +1,1 @@
+declare const __ENVIRONMENT__:any;

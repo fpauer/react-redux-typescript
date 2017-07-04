@@ -1,0 +1,84 @@
+.auth {                                                     width: 75%; margin: 0 auto;
+    .background-line {                                      margin: 20px 0; }
+    .auth-form {
+        .controls {                                         text-align: center;
+            .button {                                       background-color: $brand-light-blue; width: 100%; font-size: $capital-font-size; font-weight: bold;
+                                                            text-transform: uppercase;
+            }
+        }
+        &.register {
+            .row .flexible {
+                .flexible-child {
+                    &:first-of-type {                       margin-right: 5px; }
+                    &:last-of-type {                        margin-left: 5px; }
+                }
+            }
+        }
+        .field-description {                                font-size: $small-font-size; margin-top: -15px; margin-bottom: 10px; color: $brand-gray; }
+    }
+    .register, .restore-password, .billing-form {           position: relative; overflow-y: hidden;
+        .title {                                            font-weight: bold; text-align: center; font-size: $capital-font-size; margin: 20px 0; }
+        .cancel-btn, .back-btn {                            position: absolute; top: 20px;
+            a {                                             color: $brand-default; }
+        }
+        .cancel-btn {                                       left: 0; }
+        .back-btn {                                         right: 0; }
+        .multi-step, .single-form {
+            .proceed {                                      position: fixed; bottom: 0; width: 100%; padding-right: 40px; }
+            .proceed-static {                               width: 100%; }
+            button {                                        background-color: $brand-light-blue; width: 100%; }
+            .columns {                                      padding: 0; }
+            .description {                                  margin: 20px 0; }
+            .controls {                                     margin-top: 10px; }
+            .register-profile {
+                .title {                                    margin: 0; font-size: 14px; }
+                .description {                              margin: 5px 0 10px 0; font-size: 14px; }
+            }
+            .register-speciality {
+                .description {
+                    &.offer {
+                        min-width: 280px;
+                        h4 {
+                            font-weight: bold;
+                            color: $brand-sky-blue;
+                        }
+                        margin: 0 auto;
+                        text-align: center;
+                        width: 66%;
+                        border-left: solid 1px $brand-sky-blue;
+                        border-right: solid 1px $brand-sky-blue;
+                        border-bottom: solid 1px $brand-sky-blue;
+                        padding: 0 20px 20px 20px;
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                }
+            }
+            .billing-form {                                 margin-top: 20px;
+                .available-billing-cards {                  text-align: center; margin-bottom: 10px; }
+            }
+        }
+    }
+    .register {
+        &.with-header-image {                               overflow-y: visible; min-height: 100vh; display: flex; flex-direction: column;
+            .header, .footer {                              left: -17%; }
+            .footer {                                       flex: 1 auto; background-position: bottom; }
+        }
+    }
+    .errors {                                               margin-top: 10px; }
+}
+
+// Small screens
+@media only screen and (max-width: 39.9375em) {
+    .auth {                                                 width: 90%;
+        .register {
+            &.with-header-image {
+                .header, .footer {                          left: -6.25%; }
+            }
+        }
+        .logo img {                                         width: 150px; }
+
+    }
+}

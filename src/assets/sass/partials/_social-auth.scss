@@ -1,0 +1,8 @@
+.social-auth {                      display: flex;
+    .social {                       flex-grow: 1; text-align: center; margin: 0 5px; color: $brand-bright; border-radius: 5px; padding: 5px 0;
+        &.facebook {                background-color: $brand-facebook; }
+        &.twitter {                 background-color: $brand-twitter; }
+        &.google {                  background-color: $brand-google; }
+        &.linkedin {                background-color: $brand-linkedin; }
+    }
+}
