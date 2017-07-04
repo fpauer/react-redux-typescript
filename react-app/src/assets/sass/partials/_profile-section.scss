@@ -1,0 +1,23 @@
+.section.profile-section {
+    .block-title {                                              margin-bottom: 20px; }
+    .base-form {                                                position: relative;
+        .back {                                                 position: absolute; top: -43px; margin-left: 20px; }
+        .editable-blocks {                                      margin-bottom: 20px;
+            .block {
+                .flexible {
+                    .flexible-child {                           color: $brand-gray;
+                        &.vertical-align {                      position: relative;
+                            span, i {                           @include absolute-vertical-center; }
+                            i {                                 margin-left: -10px; }
+                        }
+                        &.title-child {                         color: $brand-default; font-weight: bold; }
+                    }
+                }
+                .title {                                        margin: 10px 0 0 0; }
+                &.photo-block {
+                    img {                                       width: 100px; margin-right: 20px; border: 5px solid; }
+                }
+            }
+        }
+    }
+}
